@@ -1,0 +1,57 @@
+body.dark 
+  background-color $bgDarkColor
+
+.dark 
+  #header
+    background-color #0d0d10b3
+  .header-wrapper 
+    .title 
+      a
+        color $textLightColor
+    .search-box input
+       background-color $textLightColor
+  .vuepress-blog-theme-content
+    background-color $bgDarkColor
+    color  $textLightColor
+  .post-meta-date
+    color: #d7cac1;
+  .post-tag
+    a
+      color $textLightColor
+      background-color rgba( #8b6d44,0.4)
+      &:hover
+        background-color rgba( #8b6d44,0.8)
+        color lighten($textLightColor, 50%)
+  .vuepress-toc 
+    .vuepress-toc-item 
+      a
+        color #72a8dd
+
+  {$contentClass}
+    code
+      background #2a2e31
+      color $textLightColor
+  blockquote 
+    color $textLightColor
+    background #2a2e31
+  div[class*="language-"]
+    background #161616
+  //列表
+  .ui-post-title 
+    background #2b4555
+    padding 5px 10px
+    border-radius 5px
+    a
+      color $textLightColor
+  .ui-post-summary,.ui-post-date,.ui-post-tag
+    color $textLightColor
+  .nav-link:hover, .nav-link.router-link-active
+    color $accentColor
+  .nav-link
+    color rgba($accentColor,0.6)
+  //tag
+  .blog-tag
+    color $textLightColor
+    border-color  rgba($textLightColor,0.2)
+
+

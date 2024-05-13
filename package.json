@@ -1,0 +1,25 @@
+{
+  "name": "billy-chin",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "heql",
+    "email": ""
+  },
+  "scripts": {
+    "dev": "vuepress dev blog --host localhost --open",
+    "build": "vuepress build blog",
+    "deploy": "bash deploy.sh"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.7.1",
+    "@vuepress/theme-blog": "^2.3.2",
+    "vuepress": "^1.7.1"
+  },
+  "dependencies": {
+    "element-ui": "^2.15.9",
+    "vue-switches": "^2.0.1"
+  }
+}
