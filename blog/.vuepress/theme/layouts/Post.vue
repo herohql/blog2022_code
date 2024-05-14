@@ -20,7 +20,7 @@
       <footer>
         <Newsletter v-if="$service.email.enabled" />
         <hr />
-        <Comment />
+        <!-- <Comment /> -->
       </footer>
     </article>
     <Toc />
