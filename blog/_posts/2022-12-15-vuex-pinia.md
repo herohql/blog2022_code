@@ -288,6 +288,32 @@ export default defineComponent({
 
 [订阅 Actions](https://pinia.web3doc.top/core-concepts/actions.html#%E8%AE%A2%E9%98%85-actions)
 
+## pina持久化插件piniaPluginPersistedstate
+```js
+//main.ts
+import App from './App.vue'
+import { createPinia } from 'pinia'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+const store = createPinia()
+store.use(piniaPluginPersistedstate)
+const app = createApp(App)
+app.use(store)
+```
+所有定义的defineStore都会关联上持久化插件，可以通过`persist`配置具体的行为
+```js
+persist:true //开启
+```
+下面提供修改了store缓存中不变化的问题，需要增加版本控制，再恢复前钩子中判断版本，是否清空本地缓存来实现
+```js
+persist: {
+  beforeRestore: (state) => { //恢复前的钩子
+    console.log(state.store.getVision)
+    if(state.store.getVision !== import.meta.env.VITE_VISION){
+      localStorage.clear()
+    }
+  }
+}
+```
 
 
 ## Vuex 回顾

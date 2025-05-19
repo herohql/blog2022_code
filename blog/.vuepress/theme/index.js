@@ -151,22 +151,22 @@ module.exports = themeConfig => {
         pageCtx.frontmatter.description = pageCtx.frontmatter.summary
       }
       //取正文朗读
-    //   pageCtx.context =
-    //   removeMd(
-    //     strippedContent
-    //       .trim()
-    //       // .replace(/^#+\s+(.*)/, '')
+      // pageCtx.context =
+      // removeMd(
+      //   strippedContent
+      //     .trim()
+      //     // .replace(/^#+\s+(.*)/, '')
           
-    //       .replace(/(?<!\!)\==/g, '等于')// ===  ==, 排除!==的情况
-    //       .replace(/\!==?/g, '不等于')//!==  !=
-    //       .replace(/\./g, '点')
-    //       .replace(/(?<=\s+)\[/g, '数组') // [只有再空格后面才转数组
-    //       .replace(/(?<!(\)\s+))\{/g, '对象') // '{' 前面不是 ')空格' 才匹配, 排除func和if
-    //       .replace(/(?<=if\s+)\(/g, '条件为') // if() 读作 if条件为
-    //       .replace(/(?<=for\s+)\(/g, '循环') // for() 读作 for循环
-    //       .replace(/(?<=function.*?)\(/g, '函数, 参数为') // function a(b){ 读作 function a函数 参数为b
+      //     .replace(/(?<!\!)\==/g, '等于')// ===  ==, 排除!==的情况
+      //     .replace(/\!==?/g, '不等于')//!==  !=
+      //     .replace(/\./g, '点')
+      //     .replace(/(?<=\s+)\[/g, '数组') // [只有再空格后面才转数组
+      //     .replace(/(?<!(\)\s+))\{/g, '对象') // '{' 前面不是 ')空格' 才匹配, 排除func和if
+      //     .replace(/(?<=if\s+)\(/g, '条件为') // if() 读作 if条件为
+      //     .replace(/(?<=for\s+)\(/g, '循环') // for() 读作 for循环
+      //     .replace(/(?<=function.*?)\(/g, '函数, 参数为') // function a(b){ 读作 function a函数 参数为b
           
-    //   )
+      // )
      },
   }
 

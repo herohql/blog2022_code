@@ -36,3 +36,9 @@ comment:
 主要是及时记录看到或者学到的知识，便于日后温故而知新，也把自己的经验分享给有需要的人。
 
 同时博客也可以交一些相同方向的好友，一起学习交流。
+
+## 感谢
+如果博客中的内容对您有帮助，可以通过打赏来感谢我<br>
+
+<img src="@assets/zanshang/1.jpg"  width="300px" />
+<img src="@assets/zanshang/2.jpg"  width="300px" />

@@ -3,7 +3,7 @@
     <div class="mobile-header-bar">
       <div class="mobile-header-title">
         <NavLink link="/" class="mobile-home-link">{{ $site.title }} </NavLink>
-        <read style="margin-left:auto; margin-right:15px;"/>
+        <!-- <read style="margin-left:auto; margin-right:15px;"/> -->
         <component
           :is="isOpen ? 'XIcon' : 'MenuIcon'"
           @click="$emit('toggle-sidebar')"
